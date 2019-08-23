@@ -12,6 +12,10 @@ module.exports = texto => {
     texto = replaceAll('"', "", texto);
     console.log('Aspas """ retiradas');
   }
+  if (texto.includes("'")) {
+    texto = replaceAll("'", "", texto);
+    console.log('Aspas simples retiradas');
+  }
   if (texto.includes(",")) {
     texto = replaceAll(",", "", texto);
     console.log("Virgulas ',' retiradas");
@@ -31,6 +35,14 @@ module.exports = texto => {
   if (texto.includes(";")){
     texto = replaceAll(";", "", texto);
     console.log("; retirado");
+  }
+  if( texto.includes(":")){
+    texto = replaceAll(":","",texto);
+    console.log("dois pontos retirado")
+  }
+  if( texto.includes("/")){
+    texto = replaceAll("/","",texto);
+    console.log("barra retirada retirado")
   }
   return texto;
 };

@@ -7,13 +7,13 @@ wn.defaults.lang = 'ptPT';
 
 function start(){
     return new Promise((resolve,reject) => {
-        let str = fs.readFileSync('in.docx', 'utf8');
+        let str = fs.readFileSync('./file/in.txt', 'utf8');
         resolve(str.toString())
     })
 }
 
 function ask1(str){
-    const index = readline.question("tem numero ? \n [1 - sim] \n [ 2- nao] : ");
+    const index = readline.question("tem numero ? \n [1 - sim] \n [ 2 - nao] : ");
     const obj  = { str , resp: index};
     return obj;
 }
@@ -34,7 +34,7 @@ function ask2(obj){
 }
 
 function save(str){
-    return fs.appendFileSync('out.docx', str.concat("\n"), { encoding: 'utf8'});
+    return fs.appendFileSync('./file/out.txt', str.concat("\n"), { encoding: 'utf8'});
 }
 
 start()

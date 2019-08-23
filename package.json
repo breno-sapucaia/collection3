@@ -9,22 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/masabex/collection3.git"
+    "url": "git+https://github.com/breno-sapucaia/collection3.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/masabex/collection3/issues"
+    "url": "https://github.com/breno-sapucaia/collection3/issues"
   },
-  "homepage": "https://github.com/masabex/collection3#readme",
+  "homepage": "https://github.com/breno-sapucaia/collection3#readme",
   "dependencies": {
     "readline-sync": "^1.4.10",
     "replaceall": "^0.1.6",
     "utf8": "^3.0.0",
     "written-number": "^0.9.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
   }
 }

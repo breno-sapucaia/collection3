@@ -3,12 +3,17 @@ const readline =require("readline-sync")
 const replaceall =require("replaceall")
 const wn = require("written-number")
 const treat = require('./treat')
+
 wn.defaults.lang = 'ptPT';
 
 function start(){
     return new Promise((resolve,reject) => {
+        try{
         let str = fs.readFileSync('./file/in.txt', 'utf8');
         resolve(str.toString())
+        } catch(msg){
+            reject(msg)
+        }
     })
 }
 
@@ -24,8 +29,10 @@ function ask2(obj){
         for(let i = 0; i<= number; i++){
             //implemenar lógica de subistituir número por cardinal
             var cardinal = wn(i);
-            while(obj.str.includes(" "+i.toString()+" ")){
+            while(obj.str.includes(" "+i.toString()+" ") || obj.str.includes(" "+i.toString()+".")){
                 obj.str = obj.str.replace(" "+i.toString()+" ", " "+cardinal+" ")
+                //obj.str = obj.str.replace(i.toString()+" ", cardinal+" ")
+                obj.str = obj.str.replace(" "+i.toString()+"."," "+cardinal+".")
             }
         }
         return treat(obj.str); 
@@ -34,12 +41,14 @@ function ask2(obj){
 }
 
 function save(str){
+    console.log("Arquivo criado")
     return fs.appendFileSync('./file/out.txt', str.concat("\n"), { encoding: 'utf8'});
 }
 
 start()
     .then(str => ask1(str))
     .then(obj => ask2(obj))
-    .then(obj => save(obj))
+    .then(str => save(str))
+    .catch(err => console.log(err))
 
 

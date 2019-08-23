@@ -44,5 +44,28 @@ module.exports = texto => {
     texto = replaceAll("/","",texto);
     console.log("barra retirada retirado")
   }
+  if( texto.includes("[")){
+    texto = replaceAll("[","",texto);
+    console.log("[ retirado")
+  }  
+  
+  if( texto.includes("]")){
+    texto = replaceAll("]","",texto);
+    console.log("] retirado")
+  }  
+
+  if( texto.includes("#")){
+    texto = replaceAll("#","",texto);
+    console.log("# retirado")
+  }
+  if( texto.includes("=")){
+    texto = replaceAll("=","é igual a",texto);
+    console.log("= tratado")
+  }
+  if( texto.includes("-")){
+    texto = replaceAll("-","é igual a",texto);
+    console.log("- tratado")
+  }
+
   return texto;
 };

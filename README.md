@@ -15,7 +15,7 @@ node 10.x
 
 # como usar
 
-existe um arquivo chamado <b><em>in.docx</em></b>
+existe um arquivo chamado <b><em>file/in.txt</em></b>
 é nele que você tem que colocar o texto que você quer formatar.
 
 só digitar esses comandos aqui no prompt
@@ -28,4 +28,6 @@ quando tu roda o npm start vai te uma pergunta,
 se o texto que você colocou <b>tem numero você <em>digita 1</em></b><br>
 se não você digita 2 e jaera
 
-se você digitou 1 tu tera que indentificar no texto qual o maior número que existe nele e inserir no console e digitar enter, é isso seja feliz
+se você digitou 1 tu tera que indentificar no texto qual o maior número que existe nele e inserir no console e digitar pressione enter
+
+o texto curado vai ta no file/out.txt

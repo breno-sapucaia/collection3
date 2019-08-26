@@ -16,10 +16,6 @@ module.exports = texto => {
     texto = replaceAll("'", "", texto);
     console.log('Aspas simples retiradas');
   }
-  if (texto.includes(",")) {
-    texto = replaceAll(",", "", texto);
-    console.log("Virgulas ',' retiradas");
-  }
   if (texto.includes("%")) {
     texto = replaceAll("%", "por cento", texto);
     console.log("porcentagem tratada");
@@ -55,17 +51,34 @@ module.exports = texto => {
   }  
 
   if( texto.includes("#")){
-    texto = replaceAll("#","",texto);
-    console.log("# retirado")
+    texto = replaceAll("#","sharp",texto);
+    console.log("# to sharp")
   }
   if( texto.includes("=")){
     texto = replaceAll("=","é igual a",texto);
     console.log("= tratado")
   }
   if( texto.includes("-")){
-    texto = replaceAll("-","é igual a",texto);
+    texto = replaceAll("-","menos",texto);
     console.log("- tratado")
   }
-
+  if( texto.includes("")){
+    texto = replaceAll("-","",texto);
+    console.log("- tratado")
+  }
+  if( texto.includes("“")){
+    texto = replaceAll("“","",texto);
+    console.log("“ tratado")
+  }
+  
+  if( texto.includes("”")){
+    texto = replaceAll("”","",texto);
+    console.log("” tratado")
+  }
+  if( texto.includes("\\")){
+    texto = replaceAll("\\","",texto);
+    console.log("\\ tratado")
+  }
+  
   return texto;
 };

@@ -59,7 +59,7 @@ module.exports = texto => {
     console.log("= tratado")
   }
   if( texto.includes("-")){
-    texto = replaceAll("-","menos",texto);
+    texto = replaceAll("-","",texto);
     console.log("- tratado")
   }
   if( texto.includes("")){

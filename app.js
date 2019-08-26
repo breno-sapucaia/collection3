@@ -29,8 +29,8 @@ function ask2(obj){
         for(let i = 0; i<= number; i++){
             //implemenar lógica de subistituir número por cardinal
             var cardinal = wn(i);
-            while(obj.str.includes(" "+i.toString()+".")){
-                obj.str = obj.str.replace(" "+i.toString()+" ", " "+cardinal+".")
+            while(obj.str.includes(" "+i.toString()+" ")){
+                obj.str = obj.str.replace(" "+i.toString()+" ", " "+cardinal+" ")
             }
         }
         for(let i = 0; i<= number; i++){

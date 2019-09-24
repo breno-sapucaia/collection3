@@ -28,6 +28,6 @@ quando tu roda o npm start vai te uma pergunta,
 se o texto que você colocou <b>tem numero você <em>digita 1</em></b><br>
 se não você digita 2 e jaera
 
-se você digitou 1 tu tera que indentificar no texto qual o maior número que existe nele e inserir no console e digitar pressione enter
+se você digitou 1 você irá ter que indentificar no texto qual o maior número que existe nele e inserir no console e digitar pressione enter
 
 o texto curado vai ta no file/out.txt

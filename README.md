@@ -1,7 +1,7 @@
 # Coleta 3 da IBM chat bot - FIAP
-SALVE RAPEIZE
 
-então eu tava com muita preguiça de ficar tirando ponto e virgula, e caracteres especiais de textos avulsos da internet, fiz essa aplicação aqui em js que é uma mão na roda
+
+Eu tava com muita preguiça de ficar tirando caracteres especiais de textos avulsos da internet, fiz essa aplicação aqui em js que é uma mão na roda
 
 # requisitos
 <ul>
